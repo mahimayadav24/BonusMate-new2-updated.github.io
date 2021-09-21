@@ -385,6 +385,9 @@ body, html {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
+    background: white;
+    border-radius: 20px;
+    margin: 0px 0px 10px 0px;
 }
 
 .bl__aside__col {
@@ -1116,9 +1119,9 @@ body, html {
 }
 
 #upper {
-    -webkit-transform: translate(20px, -20px);
-    -ms-transform: translate(20px, -20px);
-    transform: translate(20px, -20px);
+    -webkit-transform: translate(20px, 0px);
+    -ms-transform: translate(20px, 0px);
+    transform: translate(20px, 0px);
 }
 
 @media screen and (max-width: 1080px) {
@@ -1649,7 +1652,7 @@ table::-webkit-scrollbar-thumb:hover {
 }
 
 .radar__text__one {
-    font-size: calc(14pt + 0.15vw);
+    font-size: calc(12pt + 0.15vw);
     color: #143BDA;
     font-family: 'Lato__Bold';
     line-height: 1.6195;
@@ -2093,7 +2096,7 @@ table::-webkit-scrollbar-thumb:hover {
 .Conver {
     padding: 20px 20px 0px 30px;
     color: #143BDA;
-    font-size: (12pt + 0.15vw);
+    font-size: calc(12pt + 0.15vw);
     font-family: 'Lato__Bold';
     line-height: 1.6195;
     letter-spacing: 0.03em;
@@ -2101,7 +2104,7 @@ table::-webkit-scrollbar-thumb:hover {
 
 @media screen and (min-width:1920px) {
     .Conver {
-        padding: 20px 20px 20px 78px;
+        padding: 20px 20px 0px 78px;
     }
 }
 
@@ -2253,6 +2256,14 @@ table::-webkit-scrollbar-thumb:hover {
     flex: 1;
     margin: 0px 0px 0px 20px;
     background: white;
+}
+
+.left__right {
+    padding: 10px 20px 10px 20px;
+}
+
+.total__left {
+    transform: translateX(-11px);
 }
 
 .left__bl__aside__col_one {
@@ -2496,7 +2507,7 @@ table::-webkit-scrollbar-thumb:hover {
     transition: .3s ease-in-out;
 }
 
-.Card__col__org #Wave {
+.Card__col__org:hover #Wave {
     -webkit-animation: Down 3s infinite;
     animation: Down 3s infinite;
 }
@@ -2512,6 +2523,8 @@ table::-webkit-scrollbar-thumb:hover {
     }
 }
 
+/* new */
+
 @keyframes Down {
     0%, 100% {
         -webkit-transform: translateY(-3px);
@@ -2523,7 +2536,7 @@ table::-webkit-scrollbar-thumb:hover {
     }
 }
 
-.Card__col__org #upper {
+.Card__col__org:hover #upper {
     -webkit-animation: Left 3s infinite;
     animation: Left 3s infinite;
 }
@@ -2550,7 +2563,7 @@ table::-webkit-scrollbar-thumb:hover {
     }
 }
 
-#width__rs {
+.Card__col__org :hover #width__rs {
     /* top: -175px; */
     -webkit-animation: wave 5s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 5s ease -1.25s infinite;
     animation: wave 5s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 5s ease -1.25s infinite;
@@ -3054,3 +3067,7 @@ table::-webkit-scrollbar-thumb:hover {
         top: 15%;
     }
 } */
+
+.apexcharts-legend-text {
+    display: none !important;
+}
