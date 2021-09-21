@@ -1160,10 +1160,25 @@ body, html {
     width: 321px;
 }
 
+.img__width img {
+    width: 304px;
+}
+
+.width__top {
+    position: absolute;
+    top: 70px;
+    left: -21px;
+    right: 0;
+}
+
 @media screen and (min-width: 1920px) {
     /* ADD YOUR CSS ADJUSTMENTS BELOW HERE */
     #width__rs {
         top: 93px;
+        width: 400px;
+    }
+    .img__width img {
+        top: 112px;
         width: 400px;
     }
 }
@@ -1197,6 +1212,10 @@ body, html {
         left: -21px;
         right: 0;
         width: 488px;
+    }
+    .img__width img {
+        top: 112px;
+        width: 480px;
     }
 }
 
@@ -2543,8 +2562,8 @@ table::-webkit-scrollbar-thumb:hover {
 
 @-webkit-keyframes Left {
     0%, 100% {
-        -webkit-transform: translateX(-5px);
-        transform: translateX(-5px);
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
     }
     50% {
         -webkit-transform: translateX(5px);
@@ -2554,8 +2573,8 @@ table::-webkit-scrollbar-thumb:hover {
 
 @keyframes Left {
     0%, 100% {
-        -webkit-transform: translateX(-5px);
-        transform: translateX(-5px);
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
     }
     50% {
         -webkit-transform: translateX(5px);
@@ -3070,4 +3089,21 @@ table::-webkit-scrollbar-thumb:hover {
 
 .apexcharts-legend-text {
     display: none !important;
+}
+
+.new__one {
+    transform: translateX(21px);
+}
+
+.col__last__col:hover #asset {
+    transform: translateY(3px);
+    transition: .3s ease-in-out;
+}
+
+.col__last__col {
+    transition: .3s ease-in-out;
+}
+
+.col__inside__card {
+    transition: .3s ease-in;
 }
